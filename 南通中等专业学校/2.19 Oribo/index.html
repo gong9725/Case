@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--Meta Settings-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--Link Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Title-->
+    <title>Oribo Jump</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="img/favicon.png" alt="Mario Avatar" class="navbar-avatar">
+            <span class="navbar-text">Oribo-奥里堡</span>
+        </div>
+        <ul>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="help.html">帮助文档</a></li>
+            <li><a href="feedback.html">联系我们</a></li>
+            <li><a href="money.html">支持一下</a></li>
+        </ul>
+    </nav>
+    <!--Game-->
+    <audio src="audio/jump_song.mp3" class="audiojump"></audio>
+    <audio src="audio/game_over.mp3" class="gameover"></audio>
+    <div class="game-board">
+        <img src="img/clouds.png" class="clouds">
+        <img src="img/mario.gif" class="mario">
+        <img src="img/pipe.png" class="pipe">
+        <div id="game-stats">
+            <span id="life">生命值: 3</span>
+            <span id="score">分数: 0</span>
+        </div>
+    </div>
+    <p id="text-start" style="cursor: pointer;">▶ start </p>
+    <p id="text-gameover" style="cursor: pointer; display: none;"><strong>GAME OVER</strong></p>
+    <!--Script-->
+    <script src="js/script.js"></script>
+    <script>
+        // 添加页面加载时弹出提示框的脚本
+        window.onload = function() {
+            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_NAVIGATE) {
+                alert("请先看帮助文档");
+            }
+        };
+    </script>
+</body>
+</html>
