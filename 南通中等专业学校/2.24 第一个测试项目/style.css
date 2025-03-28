@@ -1,0 +1,15 @@
+/* 这里可以添加CSS样式 */
+body {
+    font-family: '微软雅黑', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #87c981, #333); /* 修改: 将背景颜色改为渐变 */
+}
+
+h1 {
+    color: #fff; /* 修改: 将文字颜色改为白色以适应渐变背景 */
+}
