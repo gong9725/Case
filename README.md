@@ -6,11 +6,11 @@
 版本管理（哪个功能实现了保存一个版本）<br>
 <br>
 好用的网址/网站名：<br>
-liblib.art/inspiration<br>
-github<br>
-trae.com.cn<br>
-cursor.com/cn<br>
-星流<br>
+https://www.liblib.art/inspiration<br>
+https://github.com/<br>
+https://www.trae.com.cn/<br>
+https://www.cursor.com/cn<br>
+http://xingliuai.com<br>
 https://tongyi.aliyun.com/wanxiang/<br>
 <br>
 2025.3.28  有什么好的建议大佬帮帮提提，太谢谢了！！！入门没多久的小白(网页和github)<br>
