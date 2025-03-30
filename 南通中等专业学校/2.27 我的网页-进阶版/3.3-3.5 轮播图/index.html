@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龚嘉周舜的网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 轮播图即为班级介绍 -->
+    <div class="carousel" id="class-intro">
+        <div class="carousel-inner">
+            <img src="images/img1.webp" class="carousel-item active" alt="Image 1">
+            <img src="images/img2.webp" class="carousel-item" alt="Image 2">
+            <img src="images/img3.jpg" class="carousel-item" alt="Image 3">
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <span class="website-name">龚嘉周舜的网页</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#class-intro">班级介绍</a></li>
+            <li><a href="#class-members">班级成员</a></li>
+            <li><a href="#class-news">班级新闻</a></li>
+            <li><a href="#class-name">班级活动</a></li>
+        </ul>
+    </nav>
+
+    <!-- 删除重复的班级介绍部分 -->
+    <!--
+    <section id="class-intro" style="background-color: #5989bd;">
+        <h1>班级介绍</h1>
+    </section>
+    -->
+
+    <section id="class-members" style="background-color: #ebb48f;">
+        <h5>班级成员</h5>
+    </section>
+    <section id="class-news" style="background-color: #d7d88e;">
+        <h5>班级新闻</h5>
+    </section>
+    <section id="class-name" style="background-color: #87be87;">
+        <h5>班级活动</h5>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
