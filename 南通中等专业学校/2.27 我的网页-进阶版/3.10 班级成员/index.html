@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龚嘉周舜的网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 轮播图即为班级介绍 -->
+    <div class="carousel" id="class-intro">
+        <div class="carousel-inner">
+            <img src="images/img1.webp" class="carousel-item active" alt="Image 1">
+            <img src="images/img2.webp" class="carousel-item" alt="Image 2">
+            <img src="images/img3.jpg" class="carousel-item" alt="Image 3">
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <span class="website-name">龚嘉周舜的网页</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#class-intro">班级介绍</a></li>
+            <li><a href="#class-members">班级成员</a></li>
+            <li><a href="#class-news">班级新闻</a></li>
+            <li><a href="#class-name">班级活动</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="class-members" style="background-color: #ebb48f;">
+        <h5 class="htitle">班级成员</h5>
+        <div class="member-cards">
+            <div class="card" style="background-color: #ffcccb;">
+                <div class="icon">👦</div>
+                <div class="name">张三</div>
+                <div class="description">热爱编程，喜欢挑战新事物。</div>
+            </div>
+            <div class="card" style="background-color: #ffb6c1;">
+                <div class="icon">👧</div>
+                <div class="name">李四</div>
+                <div class="description">喜欢设计，擅长UI/UX。</div>
+            </div>
+            <div class="card" style="background-color: #ffa07a;">
+                <div class="icon">👦</div>
+                <div class="name">王五</div>
+                <div class="description">对数据科学充满热情。</div>
+            </div>
+            <div class="card" style="background-color: #ff7f50;">
+                <div class="icon">👧</div>
+                <div class="name">赵六</div>
+                <div class="description">喜欢音乐，擅长小提琴。</div>
+            </div>
+            <div class="card" style="background-color: #ff6347;">
+                <div class="icon">👦</div>
+                <div class="name">孙七</div>
+                <div class="description">热爱运动，擅长篮球。</div>
+            </div>
+            <div class="card" style="background-color: #ff4500;">
+                <div class="icon">👧</div>
+                <div class="name">周八</div>
+                <div class="description">喜欢阅读，尤其喜欢科幻小说。</div>
+            </div>
+            <div class="card" style="background-color: #ff8c00;">
+                <div class="icon">👦</div>
+                <div class="name">吴九</div>
+                <div class="description">对人工智能充满兴趣。</div>
+            </div>
+            <div class="card" style="background-color: #ffa500;">
+                <div class="icon">👧</div>
+                <div class="name">郑十</div>
+                <div class="description">喜欢旅行，去过很多国家。</div>
+            </div>
+            <div class="card" style="background-color: #ffd700;">
+                <div class="icon">👦</div>
+                <div class="name">冯十一</div>
+                <div class="description">热爱摄影，擅长风景摄影。</div>
+            </div>
+            <div class="card" style="background-color: #ffff00;">
+                <div class="icon">👧</div>
+                <div class="name">陈十二</div>
+                <div class="description">喜欢烹饪，擅长做甜点。</div>
+            </div>
+        </div>
+    </section>
+    <section id="class-news" style="background-color: #d7d88e;">
+        <h5>班级新闻</h5>
+    </section>
+    <section id="class-name" style="background-color: #87be87;">
+        <h5>班级活动</h5>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #497c5e;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-right: 0.625em;
+}
+
+.website-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25em;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 1.25em 0;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.paragraph {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5625em;
+    color: #555;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.9375em;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 0.9375em;
+    border-radius: 1.25em;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #0056b3;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5em 1em;
+    }
+
+    .logo-image {
+        width: 2em;
+        height: 2em;
+    }
+
+    .website-name {
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        gap: 0.8em;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .paragraph {
+        font-size: 0.9em;
+    }
+
+    .tag {
+        padding: 0.4em 0.8em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.3em 0.6em;
+    }
+
+    .logo-image {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .website-name {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        gap: 0.6em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .paragraph {
+        font-size: 0.8em;
+    }
+
+    .tag {
+        padding: 0.3em 0.6em;
+        font-size: 0.7em;
+    }
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* 添加 flex-direction: column 使内容垂直排列 */
+    justify-content: flex-start;
+    /* 将内容从顶部开始排列 */
+    align-items: center;
+    /* 使内容水平居中 */
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0.5em;
+    /* 添加顶部内边距，使 h5 与顶部有一定的间距 */
+}
+
+.htitle {
+
+    margin-bottom: 0.5em;
+
+}
+
+/* 轮播图样式 */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #5989bd;
+    /* 添加与班级介绍相同的背景色 */
+    overflow: hidden;
+    /* 添加 overflow: hidden 以防止图片溢出 */
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+    /* 添加 object-fit: cover 以保持图片比例并撑满屏幕 */
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    /* 缩小卡片之间的间隙 */
+    padding: 0.5em;
+    /* 缩小内边距 */
+}
+
+.card {
+    width: 15%;
+    /* 将卡片宽度调整为页面的20% */
+    padding: 0.5em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 1.5em;
+    /* 缩小图标大小 */
+    margin-bottom: 0.3em;
+    /* 缩小图标与姓名的间距 */
+}
+
+.name {
+    font-size: 0.7em;
+    /* 缩小姓名字体大小 */
+    font-weight: bold;
+    margin-bottom: 0.1em;
+    /* 缩小姓名与描述的间距 */
+}
+
+.description {
+    font-size: 0.5em;
+    /* 缩小描述字体大小 */
+    color: #333;
+}
