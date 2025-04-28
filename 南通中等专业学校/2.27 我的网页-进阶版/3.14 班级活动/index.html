@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龚嘉周舜的网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 轮播图即为班级介绍 -->
+    <div class="carousel" id="class-intro">
+        <div class="carousel-inner">
+            <img src="images/img1.webp" class="carousel-item active" alt="Image 1">
+            <img src="images/img2.webp" class="carousel-item" alt="Image 2">
+            <img src="images/img3.jpg" class="carousel-item" alt="Image 3">
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <span class="website-name">龚嘉周舜的网页</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#class-intro">班级介绍</a></li>
+            <li><a href="#class-members">班级成员</a></li>
+            <li><a href="#class-news">班级新闻</a></li>
+            <li><a href="#class-name">班级活动</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 班级介绍 -->
+    <section id="class-members" style="background-color: #ebb48f;">
+        <h2 class="htitle">班级成员</h2>
+        <div class="member-cards">
+            <div class="card" style="background-color: #ffcccb;">
+                <div class="icon">👦</div>
+                <div class="name">张三</div>
+                <div class="description">热爱编程，喜欢挑战新事物。</div>
+            </div>
+            <div class="card" style="background-color: #ffb6c1;">
+                <div class="icon">👧</div>
+                <div class="name">李四</div>
+                <div class="description">喜欢设计，擅长UI/UX。</div>
+            </div>
+            <div class="card" style="background-color: #ffa07a;">
+                <div class="icon">👦</div>
+                <div class="name">王五</div>
+                <div class="description">对数据科学充满热情。</div>
+            </div>
+            <div class="card" style="background-color: #ff7f50;">
+                <div class="icon">👧</div>
+                <div class="name">赵六</div>
+                <div class="description">喜欢音乐，擅长小提琴。</div>
+            </div>
+            <div class="card" style="background-color: #ff6347;">
+                <div class="icon">👦</div>
+                <div class="name">孙七</div>
+                <div class="description">热爱运动，擅长篮球。</div>
+            </div>
+            <div class="card" style="background-color: #ff4500;">
+                <div class="icon">👧</div>
+                <div class="name">周八</div>
+                <div class="description">喜欢阅读，尤其喜欢科幻小说。</div>
+            </div>
+            <div class="card" style="background-color: #ff8c00;">
+                <div class="icon">👦</div>
+                <div class="name">吴九</div>
+                <div class="description">对人工智能充满兴趣。</div>
+            </div>
+            <div class="card" style="background-color: #ffa500;">
+                <div class="icon">👧</div>
+                <div class="name">郑十</div>
+                <div class="description">喜欢旅行，去过很多国家。</div>
+            </div>
+            <div class="card" style="background-color: #ffd700;">
+                <div class="icon">👦</div>
+                <div class="name">冯十一</div>
+                <div class="description">热爱摄影，擅长风景摄影。</div>
+            </div>
+            <div class="card" style="background-color: #ffff00;">
+                <div class="icon">👧</div>
+                <div class="name">陈十二</div>
+                <div class="description">喜欢烹饪，擅长做甜点。</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 班级新闻 -->
+    <section id="class-news" style="background-color: #d7d88e;">
+        <h2 class="htitle">班级新闻</h2>
+        <div class="news-list">
+            <ul>
+                <li>
+                    <div class="news-title">班级迎新会圆满结束</div>
+                    <div class="news-date">2023-10-01</div>
+                </li>
+                <li>
+                    <div class="news-title">迎新活动照片回顾</div>
+                    <div class="news-date">2023-10-02</div>
+                </li>
+                <li>
+                    <div class="news-title">迎新会嘉宾发言摘要</div>
+                    <div class="news-date">2023-10-03</div>
+                </li>
+                <li>
+                    <div class="news-title">迎新会志愿者名单</div>
+                    <div class="news-date">2023-10-04</div>
+                </li>
+                <li>
+                    <div class="news-title">迎新会反馈调查</div>
+                    <div class="news-date">2023-10-05</div>
+                </li>
+                <li>
+                    <div class="news-title">迎新会后续活动预告</div>
+                    <div class="news-date">2023-10-06</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="news-title">班级篮球赛火热进行中</div>
+                    <div class="news-date">2023-09-25</div>
+                </li>
+                <li>
+                    <div class="news-title">篮球赛赛程安排</div>
+                    <div class="news-date">2023-09-26</div>
+                </li>
+                <li>
+                    <div class="news-title">篮球赛最新战报</div>
+                    <div class="news-date">2023-09-27</div>
+                </li>
+                <li>
+                    <div class="news-title">篮球赛最佳球员评选</div>
+                    <div class="news-date">2023-09-28</div>
+                </li>
+                <li>
+                    <div class="news-title">篮球赛决赛预告</div>
+                    <div class="news-date">2023-09-29</div>
+                </li>
+                <li>
+                    <div class="news-title">篮球赛闭幕式通知</div>
+                    <div class="news-date">2023-09-30</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="news-title">班级读书分享会成功举办</div>
+                    <div class="news-date">2023-09-18</div>
+                </li>
+                <li>
+                    <div class="news-title">读书分享会推荐书目</div>
+                    <div class="news-date">2023-09-19</div>
+                </li>
+                <li>
+                    <div class="news-title">读书分享会精彩瞬间</div>
+                    <div class="news-date">2023-09-20</div>
+                </li>
+                <li>
+                    <div class="news-title">读书分享会获奖名单</div>
+                    <div class="news-date">2023-09-21</div>
+                </li>
+                <li>
+                    <div class="news-title">读书分享会反馈收集</div>
+                    <div class="news-date">2023-09-22</div>
+                </li>
+                <li>
+                    <div class="news-title">读书分享会后续活动预告</div>
+                    <div class="news-date">2023-09-23</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <!-- 班级活动 -->
+    <section id="class-name" style="background-color: #87be87;">
+        <h2 class="htitle">班级活动</h2>
+        <div class="class-name">
+            <div class="card">
+                <table class="activity-table">
+                    <h3>班级活动表</h3>
+                    <thead>
+                        <tr>
+                            <th>活动序号</th>
+                            <th>活动名称</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>迎新会</td>
+                            <td>2023-10-01</td>
+                            <td>礼堂</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>篮球赛</td>
+                            <td>2023-09-25</td>
+                            <td>操场</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>读书分享会</td>
+                            <td>2023-09-18</td>
+                            <td>图书馆</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>运动会</td>
+                            <td>2023-11-01</td>
+                            <td>体育馆</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>毕业典礼</td>
+                            <td>2024-06-30</td>
+                            <td>礼堂</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card">
+                <form class="activity-form">
+                    <!-- <h3>活动报名表</h3> -->
+                    <label for="class">班级</label>
+                    <input type="text" id="class" name="class" placeholder="请输入班级" required>
+
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="请输入姓名" required>
+
+                    <label for="activity">选择活动</label>
+                    <select id="activity" name="activity" required>
+                        <option value="">请选择活动</option>
+                        <option value="迎新会">迎新会</option>
+                        <option value="篮球赛">篮球赛</option>
+                        <option value="读书分享会">读书分享会</option>
+                        <option value="运动会">运动会</option>
+                        <option value="毕业典礼">毕业典礼</option>
+                    </select>
+
+                    <button type="submit">提交报名</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
